@@ -9,6 +9,10 @@ export function navigate (href) {
   window.dispatchEvent(navigationEvent)
 }
 
+const styles = {
+  'padding-right': '1rem'
+}
+
 export function Link ({ target, to, ...props }) {
   const handleClick = (event) => {
     const isMainEvent = event.button === 0
@@ -21,5 +25,5 @@ export function Link ({ target, to, ...props }) {
     }
   }
 
-  return <a onClick={handleClick} href={to} target={target} {...props} />
+  return <a onClick={handleClick} style={styles} href={to} target={target} {...props} />
 }
