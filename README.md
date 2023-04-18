@@ -1,4 +1,4 @@
-<h1>React Router Clone</h1>
+# React Router Clone
 - [x] Single Page Applications
 - [x] Navegation between pages with back button
 - [x] Link component 
